@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet"> 
+   <link href="css/responsive-mL.css" rel="stylesheet">
+  <!-- <link href="css/responsive-d.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="myDIV">
+    <header class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/pngegg1.png"></a>
+                <div class="buttons">
+                    <div class="bbt">
+                        <a href="index.html">Home</a>
+                        <a href="#">Search</a>
+                        <a href="#">Libary</a>
+                        <a href="#">Account</a>
+                    </div>
+                       <button class="bbt1"onclick="addSideBar()"><i class="fa fa-bars fa-2x" aria-hidden="true" ></i></button>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <div class="overlay">
+    <div class="sidebar">
+        <button class ="back" onclick="removeSideBar()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="m-logo">
+            <a href="#">
+                <img src="images/pngegg1.png">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#news">Search</a></li>
+                <li><a href="#contact">Library</a></li>
+                <li><a href="#about">Account</a></li>
+              </ul>
+        </div>
+    </div>
+    </div>
+   <div class="wrapper">
+     <div class="w1">
+     <div class="content">
+
+        <h1 id="time">Good morning</h1>
+        
+        <h2>
+            Recently Played
+        </h2>
+        <div class ="play">
+        <div   id="play1"  class ="play1 owl-carousel owl-theme ">
+            <div class="image item">
+                <a onclick="  getItem(0)" href="#">
+                    <img src="images/rjbalaji-pod.jpg">
+                    <h6>naalna murruku</h6>
+                    <audio class="aud" controls >
+                        <source src="audio/bones-official-music-video.mp3" type="audio/mp3">
+                    </audio>
+                </a>
+            </div>
+            <div class="image item">
+                <a  onclick="  getItem(1)" href="#">
+                    <img src="images/sham-pod.jpg">
+                    <h6>oru cup confidence</h6>
+                </a>
+            </div>
+            <div class="image item">
+                <a  onclick="  getItem(2)" href="#">
+            <img src="images/The_Weeknd_-_Starboy.png">
+            <h6>The Weeknd-Starboy</h6>
+            </a>
+            </div>
+            
+            <div class ="image item">
+                <a  onclick="getItem(3)"href="#">
+                <img src="images/bones.png">
+                <h6>imagine dragons-bones</h6>
+                </a>
+            </div>
+                <div class ="image item">
+                    <a  onclick="  getItem(4)" href="#">
+                    <img src="images/we-vi.png">
+                    <h6>the weeknd-playlist</h6>
+                    </a>
+                </div>
+                <div class ="image item">
+                    <a  onclick="  getItem(5)" href="#">
+                    <img src="images/weekn.png">
+                    <h6>The weeknd-blinding light</h6>
+                    </a>
+                </div>
+                <div class="image item">
+                    <a onclick="  getItem(6)"href="#">
+                        <img src="images/perfect.png">
+                        <h6>ED sheeran-PERFECT</h6>
+                    </a>
+                </div>
+                
+             </div>
+            </div>
+             <div class="picks">
+                <div class="play">
+                <h2>Top Picks</h2>
+                <div id="play2" class="play1 owl-carousel owl-theme ">
+           
+                     <div class="image item">
+                        <a onclick="secgetItem(0)" >
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png">
+                    <h6>The Weeknd-Starboy</h6>
+                    </a>
+                    </div>
+                    <div class ="image item">
+                        <a onclick="secgetItem(1)">
+                        <img src="images/bones.png">
+                        <h6>imagine dragons-bones</h6>
+                        </a>
+                    </div>
+                        <div class ="image item">
+                            <a onclick="secgetItem(2)">
+                            <img src="images/weend.png">
+                            <h6>the weeknd-playlist</h6>
+                            </a>
+                        </div>
+                        <div class ="image item">
+                            <a onclick="secgetItem(3)">
+                            <img src="images/weekn.png">
+                            <h6>blinding light</h6>
+                            </a>
+                        </div>
+                        <div class ="image item">
+                            <a onclick="secgetItem(4)">
+                            <img src="images/anirudh.jpg">
+                            <h6>anirudh-alubum</h6>
+                            </a>
+                        </div>
+                        <div class ="image item">
+                            <a onclick="secgetItem(5)">
+                            <img src="images/harris.png">
+                            <h6>harris-alubum</h6>
+                            </a>
+                        </div>
+                  
+                 </div>
+                </div>
+                </div>
+                     <div class="artist">
+                        <div class ="play">
+                        <h2>Artist choice</h2>
+                        <div id="play3"class="play1 owl-carousel owl-theme">
+                        <div class ="image item">
+                            <a onclick="trigetItem(0)">
+                            <img src="images/harris.png">
+                            <h6>harris</h6>
+                            </a>
+                            </div>
+                            <div class ="image item">
+                                <a onclick="trigetItem(1)">
+                                <img src="images/anirudh.jpg">
+                                <h6>anirudh</h6>
+                                </a>
+                            </div>
+                            <div class ="image item">
+                                <a onclick="trigetItem(2)">
+                                <img src="images/siddhu.png">
+                                <h6>siddhu mose wala</h6>
+                                </a>
+                            </div>
+                            <div class ="image item">
+                                <a onclick="trigetItem(3)">
+                                <img src="images/weend.png">
+                                <h6>the weeknd</h6>
+                                </a>
+                            </div>
+                            <div class ="image item">
+                                <a onclick="trigetItem(4)">
+                                <img src="images/yuvan.png">
+                                <h6>yuvan</h6>
+                                </a>
+                            </div>
+                        </div>
+            </div>
+            </div>
+            <div class="picks">
+                <div class="play">
+                <h2>Might Like</h2>
+                <div id="play4"class="play1 owl-carousel owl-theme ">
+           
+                     <div class="image item">
+                    <a onclick="fourgetItem(0)">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png">
+                    <h6>The Weeknd-Starboy</h6>
+                    </a>
+                    </div>
+                    <div class ="image item">
+                        <a onclick="fourgetItem(1)">
+                        <img src="images/bones.png">
+                        <h6>imagine dragons-bones</h6>
+                        </a>
+                    </div>
+                        <div class ="image item">
+                            <a onclick="fourgetItem(2)">
+                            <img src="images/weend.png">
+                            <h6>the weeknd-playlist</h6>
+                            </a>
+                        </div>
+                        <div class ="image item">
+                            <a onclick="fourgetItem(3)">
+                            <img src="images/weekn.png">
+                            <h6>The weeknd-blinding lights</h6>
+                            </a>
+                        </div>
+                        <div class ="image item">
+                            <a onclick="fourgetItem(4)">
+                            <img src="images/anirudh.jpg">
+                            <h6>anirudh-alubum</h6>
+                            </a>
+                        </div>
+                        <div class ="image item">
+                            <a onclick="fourgetItem(5)">
+                            <img src="images/harris.png">
+                            <h6>harris-alubum</h6>
+                            </a>
+                        </div>
+                        <div class="image item">
+                            <a onclick="fourgetItem(6)">
+                                <img src="images/perfect.png">
+                                <h6>ED sheeran-PERFECT</h6>
+                            </a>
+                        </div>
+                  
+                 </div>
+                </div>
+                </div>
+                <div class="picks">
+                    <div class="play">
+                    <h2>podcasts</h2>
+                    <div id="play5"class="play1 owl-carousel owl-theme ">
+                        <div class="image item">
+                            <a onclick="fivegetItem(0)">
+                                <img src="images/rishipedia-pod.jpg">
+                                <h6>rishipedia-crimespot</h6>
+                            </a>
+                        </div>
+                        <div class="image item">
+                            <a onclick="fivegetItem(1)">
+                                <img src="images/roast-pod.jpg">
+                                <h6>sunday roast-jag</h6>
+                            </a>
+                        </div>
+                        <div class="image item">
+                            <a onclick="fivegetItem(2)">
+                                <img src="images/bookshow-pod.jpg">
+                                <h6>the book show-ananthi</h6>
+                            </a>
+                        </div>
+                        <div class="image item">
+                            <a onclick="fivegetItem(3)">
+                                <img src="images/pewdiepie-pod.jpg">
+                                <h6>pewdiepie-what's Good</h6>
+                            </a>
+                        </div>
+                        <div class="image item">
+                            <a onclick="fivegetItem(4)">
+                                <img src="images/rjbalaji-pod.jpg">
+                                <h6>naalna murruku</h6>
+                            </a>
+                        </div>
+                        <div class="image item">
+                            <a onclick="fivegetItem(5)">
+                                <img src="images/sham-pod.jpg">
+                                <h6>oru cup confidence</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="w2">
+            <section class="music-player">
+                <header id="get1"class="music-player--banner"></header>
+                <main class="music-player--main">
+                  <div id="aud"class="music-player--progress">
+                    <progress class="progress--progress-bar" value="43" max="100"></progress>
+                    <div class="progress--time">2:37</div>
+                    <div class="progress--time progress--time__end">5:52</div>
+                  </div>
+                  <audio class="" id="audio" controls >
+                    <source  src="audio/bones-official-music-video.mp3" type="audio/mp3">
+                </audio>
+                  <div class="music-player--controls">
+                  <button onClick="toggleAudio()"><i class="fa fa-pause controls--play-button"></i></button>  
+                  <input type="range" onchange="timechange()" class="timeline" id="timeline" max="100" value="0">
+                    <div class="song-info">
+                        <marquee scrollamount="2">
+                      <div id="title1"class="song-info--title">Bones</div>
+                    </marquee>
+                      <!--<div class="song-info--artist">Imagine Dragons</div>-->
+                    </div>
+                    <div class="controls--actions">
+                      <i class="fa fa-retweet actions--repeat"></i>
+                      <i class="fa fa-backward actions--back"></i>
+                      <i class="fa fa-forward actions--forward"></i>
+                    </div>
+                  </div>
+                </main>
+              </section>
+
+
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/sticky/sticky.js"></script>
+    <script type="text/javascript">
+        $(".music-player").stick_in_parent();
+    </script>
+    <script type="text/javascript"src="js/owl.carousel.js">
+       
+    </script>
+ <script type ="text/javascript">
+  $('.owl-carousel').owlCarousel({
+        items:5,
+        loop:false,
+        margin:10,
+        autoplay: true,
+        slideSpeed : 800,
+        autoPlaySpeed: 5000,
+        autoPlayTimeout: 5000,
+        autoplayHoverPause:true,
+        responsive: {
+    0: {
+      items: 4
+    },
+    400: {
+      items: 4
+    },
+ 600: {
+      items: 4
+    },
+   
+
+    1024: {
+      items: 5
+    },
+
+    1440: {
+      items: 5
+    },
+
+    2400:{
+        items:6
+    }
+  }
+   
+    });
+   </script>
+   <script>
+    function addSideBar() {
+  var element = document.getElementById("myDIV");
+  element.classList.add("mystyle");
+}
+
+function removeSideBar() {
+  var element = document.getElementById("myDIV");
+  element.classList.remove("mystyle");
+}
+   </script>
+    <script type="text/javascript">
+        var element = document.getElementById("time").innerText;
+        console.log(element,"text");
+        var day = new Date();
+      
+        var hr = day.getHours();
+        console.log(hr);
+        if (hr >= 0 && hr < 12) {
+            document.getElementById("time").innerHTML="Good Morning!";
+            //document.write("Good Morning!");
+        } else if (hr == 12) {
+           // document.write("Good Noon!");
+          
+     document.getElementById("time").innerHTML="Good Noon";
+
+        } 
+        else if (hr >= 12 && hr <14) {
+   
+            document.getElementById("time").innerHTML="Good Afternoon!";
+        } 
+        else if(hr>=14&&hr<=20){
+            //document.write("Good evening!")
+            document.getElementById("time").innerHTML="Good Noon";
+         }
+            else {
+            document.getElementById("time").innerHTML="Good night!";
+            //document.write("Good Evening!");
+        }
+        //document.write("</font>");
+        console.log(hr,"text");
+
+    </script>
+ <script type="text/javascript">
+  function  getItem(num){
+    var t1= document.getElementById('play1').children[0].children[0].children[num].children[0].children[0].children[0].src;
+    var t2 = document.getElementById('play1').children[0].children[0].children[num].children[0].children[0].children[1].innerText;
+    var t3= document.getElementById('play1').children[0].children[0].children[num].children[0].children[0].children[2].children[0].src;
+  var x =  document.getElementById('get1').style.background=`url(${t1})`;
+  var y =  document.getElementById('title1').innerHTML=t2;
+  document.getElementById('get1').style.backgroundSize ='cover';
+ // document.getElementById("aud")
+ // var y =  document.getElementById('get1').style.background=`url(${t1})`;
+    console.log(x,'testing');
+    console.log(y,'testing');
+  }
+
+  function  secgetItem(num){
+ 
+    var t1 = document.getElementById('play2').children[0].children[0].children[num].children[0].children[0].children[0].src;
+    var t2 = document.getElementById('play2').children[0].children[0].children[num].children[0].children[0].children[1].innerText;
+  var x =  document.getElementById('get1').style.background=`  url(${t1})`;
+  var y =  document.getElementById('title1').innerHTML=t2;
+  document.getElementById('get1').style.backgroundSize ='cover';
+    console.log(x,'testing');
+    console.log(y,'testing');
+  }
+function  trigetItem(num){
+ 
+ var t1 = document.getElementById('play3').children[0].children[0].children[num].children[0].children[0].children[0].src;
+ var t2 = document.getElementById('play3').children[0].children[0].children[num].children[0].children[0].children[1].innerText;
+var x =  document.getElementById('get1').style.background=`  url(${t1})`;
+var y =  document.getElementById('title1').innerHTML=t2;
+document.getElementById('get1').style.backgroundSize ='cover';
+ console.log(x,'testing');
+console.log(y,'testing');
+}
+function  fourgetItem(num){
+ 
+ var t1 = document.getElementById('play4').children[0].children[0].children[num].children[0].children[0].children[0].src;
+ var t2 = document.getElementById('play4').children[0].children[0].children[num].children[0].children[0].children[1].innerText;
+var x =  document.getElementById('get1').style.background=`  url(${t1})`;
+var y =  document.getElementById('title1').innerHTML=t2;
+document.getElementById('get1').style.backgroundSize ='cover';
+ console.log(x,'testing');
+console.log(y,'testing');
+}
+function fivegetItem(num){
+ 
+ var t1 = document.getElementById('play5').children[0].children[0].children[num].children[0].children[0].children[0].src;
+ var t2 = document.getElementById('play5').children[0].children[0].children[num].children[0].children[0].children[1].innerText;
+var x =  document.getElementById('get1').style.background=`  url(${t1})`;
+var y =  document.getElementById('title1').innerHTML=t2;
+document.getElementById('get1').style.backgroundSize ='cover';
+ console.log(y,'testing');
+ console.log(x,'testing');
+}
+
+ document.getElementById('get1').style.backgroundSize ='cover';
+var time = document.getElementById(timeline);
+var audio = document.getElementById("audio");
+ function toggleAudio () {
+   
+  if (audio.paused) {
+    audio.play();
+   // playerButton.innerHTML = pauseIcon;
+  } else {
+    audio.pause();
+    //playerButton.innerHTML = playIcon;
+  }
+}
+function timechange(){
+    const time = (timeline.value * audio.duration) / 100;
+  audio.currentTime = time;
+}
+function changeTimelinePosition () {
+  const percentagePosition = (100*audio.currentTime) / audio.duration;
+  timeline.style.backgroundSize = `${percentagePosition}% 100%`;
+  timeline.value = percentagePosition;
+}
+
+audio.ontimeupdate = changeTimelinePosition;
+    </script>
+</body> 
+</html> 
